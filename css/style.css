@@ -5,54 +5,75 @@
 }
 
 .app {
-    width : 100%;
+    width: 100%;
     height: 100vh;
     background-color: white;
 }
 
 .header {
     height: 70px;
-    display:flex ; 
+    display: flex;
     background-color: aquamarine;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
 .header-container {
     display: flex;
-    width: 70% ; 
+    width: 70%;
     background-color: yellow;
-    height : 50px;
-    border: 1px dotted black ; 
+    height: 40px;
+    border: 1px dotted black;
     align-items: center;
-    
+
 }
+
 /* i tre blocchi riempiono tutta l’altezza e gestiscono l’allineamento interno */
 .left-header,
 .center-header,
 .right-header {
-  display: flex;
-  align-items: center;
-  height: 100%;
+    display: flex;
+    align-items: center;
+    height: 100%;
 }
 
 .left-header {
-    flex-basis: 120px;
-   border: 1px dotted black ; 
-   justify-content: flex-start;
-   padding : 5px ; 
+    flex-basis: 150px;
+    border: 1px dotted black;
+    justify-content: flex-start;
+    padding: 5px;
 }
 
 .center-header {
-    flex-grow: 1; /* prende tutto lo spazio rimanente */
+    flex-grow: 1;
+    /* prende tutto lo spazio rimanente */
     justify-content: center;
     gap: 10px;
-    
-    
+
+
 }
+
 .right-header {
-    flex-basis: 120px;
-    border: 1px dotted black ; 
+    flex-basis: 150px;
+    border: 1px dotted black;
     justify-content: flex-end;
-    padding: 5px ; 
+    padding: 5px;
+}
+
+.hero-section {
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    display:flex ; 
+    align-items: center;
+   
+}
+
+.hero-content {
+    margin: 0 auto ; 
+    height: 70%;
+    width: 60%;
+    background-color: #ee82ee;
+    border: 1px dotted black;
+    
 }
