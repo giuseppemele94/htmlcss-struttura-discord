@@ -64,61 +64,61 @@
     width: 100%;
     height: 500px;
     background-color: blue;
-    display:flex ; 
+    display: flex;
     align-items: center;
-   
+
 }
 
 .hero-content {
-    margin: 0 auto ; 
+    margin: 0 auto;
     height: 70%;
     width: 50%;
     background-color: #ee82ee;
     border: 4px dotted black;
-    
+
 }
 
 .section-background-white {
-    display:flex; 
+    display: flex;
     align-items: center;
-    width: 100%; 
-    height: 500px ; 
+    width: 100%;
+    height: 500px;
     background-color: white;
 }
 
 .container-second-section {
-  display: flex; 
-    margin: 0 auto ; 
-    height: 70%; 
-    width : 60% ; 
-    
+    display: flex;
+    margin: 0 auto;
+    height: 70%;
+    width: 60%;
+
 }
 
 .right-sidebar-second {
-flex-basis: 60%;
-background-color:aquamarine;
-border: 4px dotted black;
+    flex-basis: 60%;
+    background-color: aquamarine;
+    border: 4px dotted black;
 }
 
 .left-sidebar-second {
-    flex-basis : 40% ;
+    flex-basis: 40%;
     background-color: pink;
     border: 4px dotted black;
 }
 
 .third-section {
-    display: flex ; 
+    display: flex;
     align-items: center;
-    width: 100%; 
+    width: 100%;
     height: 500px;
     background-color: grey;
 }
 
 .container-third-section {
-    display: flex ; 
-    margin: 0 auto ;
-    height: 70% ; 
-    width : 60%; 
+    display: flex;
+    margin: 0 auto;
+    height: 70%;
+    width: 60%;
 }
 
 .right-sidebar-third {
@@ -128,16 +128,16 @@ border: 4px dotted black;
 }
 
 .left-sidebar-third {
-    flex-basis : 60% ; 
+    flex-basis: 60%;
     background-color: aquamarine;
-     border: 4px dotted black;
+    border: 4px dotted black;
 }
 
 .container-fourth-section {
-    display: flex ; 
-    margin: 0 auto ;
-    height: 70% ; 
-    width : 60%; 
+    display: flex;
+    margin: 0 auto;
+    height: 70%;
+    width: 60%;
 }
 
 .right-sidebar-fourth {
@@ -147,22 +147,103 @@ border: 4px dotted black;
 }
 
 .left-sidebar-fourth {
-    flex-basis : 40% ; 
+    flex-basis: 40%;
     background-color: pink;
-     border: 4px dotted black;
+    border: 4px dotted black;
 }
 
 .section-five {
-     width: 100%;
+    width: 100%;
     height: 700px;
     background-color: grey;
-    display:flex ; 
+    display: flex;
     align-items: center;
 }
 
 .section-five-content {
-    margin: 0 auto ; 
-    width : 60% ; 
+    margin: 0 auto;
+    width: 60%;
     height: 90%;
     background-color: green;
+    border: 4px dotted black;
+}
+
+.footer {
+    width: 100%;
+    height: 500px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px; 
+}
+
+.footer-container {
+    display: flex;
+    margin: 0 auto;
+    width: 60%;
+    height: 400px;
+}
+
+/* prendo 3/12 della riga per la colonna di sinistra (25%) */
+.col-3 {
+    flex-basis: calc((100% / 12) * 3);
+}
+
+.footer-left {
+    background-color: #ee82ee;
+    border: 4px dotted white;
+}
+
+.footer-right {
+    display: flex;
+    background-color: #20b2aa;
+}
+
+/* divido la colonna di destra in 4 parti uguali ( che occupano il 75%) */
+.col-4 {
+    flex-basis: calc((100% / 12) * 4);
+    border-right: 4px dotted white;
+}
+
+/* prendo 9/12 della riga per la colonna di destra (75%) */
+.col-9 {
+    flex-basis: calc((100% / 12) * 9);
+}
+
+
+.footer-bottom {
+    width: 100%;
+
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: 20px;
+
+}
+
+.footer-bottom-container {
+    display: flex;
+    margin: 0 auto;
+    background-color: #20b2aa;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    height: 60px;
+
+}
+
+.logo,
+.bottone {
+    background-color: pink;
+    border: 3px dotted black;
+    padding: 5px;
+
+}
+
+.white-bar {
+    margin-top: 20px; 
+    width: 100% ; 
+    height: 2px ; 
+    background-color: white;
 }
